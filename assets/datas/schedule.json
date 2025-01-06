@@ -1,0 +1,51 @@
+{
+  "next_session": {
+    "date": "6-25-2024",
+    "time": "16:30"
+  },
+  "3-4-2024": {
+    "16:30": {
+      "active": true,
+      "list": [
+        "Sudipto",
+        "Bappy",
+        "Lotif"
+      ]
+    }
+  },
+  "3-5-2024": {
+    "16:30": {
+      "active": true,
+      "list": [
+        "Fahim",
+        "Kibria",
+        "Arif"
+      ]
+    }
+  },
+  "3-7-2024": {
+    "16:30": {
+      "active": true,
+      "list": [
+        "Sfvsv"
+      ]
+    }
+  },
+  "5-15-2024": {
+    "16:30": {
+      "active": true,
+      "list": [
+        "Sifat"
+      ]
+    }
+  },
+  "6-25-2024": {
+    "16:30": {
+      "active": true,
+      "list": [
+        "Arif",
+        "Bappy"
+      ]
+    }
+  }
+}

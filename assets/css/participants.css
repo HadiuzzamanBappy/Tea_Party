@@ -1,0 +1,104 @@
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(6px, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: table;
+  width: 100vw;
+  height: 100vh;
+  background-color: #171717;
+  color: #fbfbfb;
+  line-height: 1.6;
+  position: relative;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+main {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  height: 100vh;
+  padding: 16px 0;
+}
+main .presentTime {
+  color: #038103;
+  border: 1px solid #038103;
+  padding: 8px 48px;
+  border-radius: 100px;
+}
+main .presentTime #selected_time {
+  color: #02a502;
+}
+main #tea_time {
+  color: #976a00;
+}
+main #scheduleList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  padding: 24px 48px;
+  border-radius: 16px;
+}
+main #scheduleList h4 {
+  color: #038103;
+}
+main #scheduleList ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+main #scheduleList ul li {
+  border: 1px solid #038103;
+  padding: 24px 48px;
+  border-radius: 16px;
+}/*# sourceMappingURL=participants.css.map */
+
+#go_to_home {
+  color: #02a502;
+}

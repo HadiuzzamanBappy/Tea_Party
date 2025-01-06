@@ -1,0 +1,158 @@
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(6px, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: table;
+  width: 100vw;
+  height: 100vh;
+  background-color: #171717;
+  color: #131313;
+  line-height: 1.6;
+  position: relative;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.hide {
+  display: none !important;
+}
+
+.query {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 10px 0px;
+  font-size: 18px;
+  position: relative;
+  justify-content: center;
+}
+.query #intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #c1c1c1;
+}
+.query #intro .date_time {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 8px;
+}
+.query #intro .date_time #present_time {
+  color: #FBFBFB;
+}
+.query #intro .greeting #name_person {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.query #intro .greeting #selected_time {
+  color: #15de15;
+}
+.query #intro #countdown #countdown_timer {
+  color: #ffb200;
+}
+.query #intro #logout_btn {
+  color: red;
+  text-decoration: none;
+  padding: 4px 16px;
+  border: 1px solid red;
+  font-size: 0.8rem;
+  border-radius: 100px;
+  display: none;
+}
+.query #intro #logout_btn:hover {
+  opacity: 0.75;
+}
+.query img {
+  border-radius: 16px;
+}
+.query .action {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.query .action .cta-btn {
+  padding: 16px 48px;
+  background: rgb(48, 84, 13);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 16px;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+.query .action .cta-btn:hover {
+  opacity: 0.75;
+  transition: all 0.5s ease-in-out;
+}
+.query .action #no-btn, .query .action #unsubsribe-btn {
+  background-color: rgb(242, 80, 80);
+}
+.query .action #no-btn:hover, .query .action #unsubsribe-btn:hover {
+  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite infinite;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+.query .action_text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  color: #c1c1c1;
+}
+.query .action_text #cta_text_name {
+  color: #FBFBFB;
+}
+.query .action_text a {
+  color: #15de15;
+}
+.query .action_text a:hover {
+  opacity: 0.75;
+}
+.query #btn_hint {
+  opacity: 0;
+  color: #fbfbfb;
+}/*# sourceMappingURL=style.css.map */

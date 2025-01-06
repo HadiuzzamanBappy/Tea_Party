@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Party</title>
+    <link rel="shortcut icon" href="assets/img/tea.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/background.css">
+</head>
+
+<body>
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div class="query">
+        <div id="intro">
+            <p class="date_time">Now at Clock: <span id="present_time"></span></p>
+            <p class="details greeting">Hey <span id="name_person"></span>, Lets have a cup of tea at <span
+                    id="selected_time" class="date_time"></span></p>
+            <div id="countdown">Time remaining: <span id="countdown_timer"></span></div>
+            <a id="logout_btn" href="#">Logout</a>
+        </div>
+        <img src="assets/img/GQbY.gif" alt="Pouring Tea">
+        <div id="cta_action" class="action">
+            <a id="yes-btn" class="cta-btn" href="#">Yes</a>
+            <a id="no-btn" class="cta-btn" href="index.html">No</a>
+        </div>
+        <div id="cta_action_text" class="action_text hide">
+            <p>You have already joined, <span id="cta_text_name"></span>!</p>
+            <div class="action">
+                <a id="list-btn" class="cta-btn" href="#">See the Member List</a>
+                <a id="unsubsribe-btn" class="cta-btn" href="#">Unsubscribe</a>
+            </div>
+        </div>
+        <p id="action_hint">Make proper choice</p>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

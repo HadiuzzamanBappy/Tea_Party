@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party | Admin</title>
+    <link rel="shortcut icon" href="../assets/img/tea.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/css/background.css">
+</head>
+
+<body>
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <main>
+        <div class="time_div">
+            <div class="time present_time">Now at the Clock: <span id="present_time"></span></div>
+            <div class="time selected_time">Next scheduled meeting at: <span id="selected_time"></span></div>
+            <a id="go_to_home" href="../index.html">Go To Home</a>
+        </div>
+        <ul id="cta">
+            <li class="cta_item">
+                <h2>Edit Party Time</h2>
+                <label for="newTime">New Time:</label>
+                <input type="datetime-local" id="newTime">
+                <button class="btn" onclick="editPartyTime()">Update Party Time</button>
+            </li>
+            <li class="cta_item">
+                <h2>Add User to Party</h2>
+                <label for="userName">User Name:</label>
+                <input type="text" id="userName" placeholder="Enter person name">
+                <label for="partyTime" id="labelPartyTime">Party Time:</label>
+                <select id="partyTime">
+                    <!-- Party session times will be dynamically populated here -->
+                </select>
+                <button class="btn" onclick="addUserToParty()">Add User to Party</button>
+            </li>
+            <li class="cta_item">
+                <h2>Remove User from Party</h2>
+                <div id="userList"></div>
+                <button class="btn" onclick="removePartiesOnPresentDate()">Remove</button>
+            </li>
+        </ul>
+    </main>
+
+    <script src="../assets/js/admin.js"></script>
+</body>
+
+</html>

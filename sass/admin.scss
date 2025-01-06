@@ -1,0 +1,124 @@
+@import "animation";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn{
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: rgb(48, 84, 13);
+    color: #fbfbfb;
+    font-size: 1rem;
+    border: none;
+    animation: 1s all ease-in-out;
+    box-shadow: 0px 0px 4px #038103;
+    &:hover{
+        opacity: 0.75;
+        animation: 1s all ease-in-out;
+    }
+}
+
+body {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background-color: #171717;
+    color: #fbfbfb;
+    line-height: 1.6;
+    position: relative;
+    font-family: sans-serif;
+    overflow: scroll;
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        padding: 40px;
+        .time_div{
+            color: #969696;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: stretch;
+            text-align: center;
+            .time{
+                padding: 8px;
+                padding: 8px 32px;
+                border-radius: 100px;
+            }
+            .present_time{
+                border: 1px solid #038103;
+                #present_time{
+                    color: #02a502;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
+            }
+            .selected_time{
+                border: 1px solid #976a00;
+                #selected_time{
+                    color: #976a00;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
+            }
+            #go_to_home{
+                color: #02a502;
+                &:hover{
+                    opacity: 0.75;
+                }
+            }
+        }
+        #cta{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            list-style-type: none;
+            width: 50%;
+            min-width: 500px;
+            .cta_item{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                padding: 16px;
+                border-radius: 16px;
+                border: 1px solid rgba(200, 200, 200, 0.5);
+                h2{
+                    border-bottom: 1px solid #616161;
+                    padding-bottom: 4px;
+                    color: #fbfbfb;
+                }
+                label{
+                    color: rgba(222, 222, 222, 0.5);
+                }
+                input,select{
+                    padding: 16px;
+                    font-size: 1rem;
+                    border-radius: 8px;
+                    option{
+                        padding: 16px;
+                    }
+                }
+
+                #userList{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 8px;
+                    padding-left: 8px;
+                    .userDiv{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                        font-size: 1.1rem;
+                        font-weight: 400;
+                        label{
+                            color: #9a9a9a;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
